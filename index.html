@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luisan tehtäväkone</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-blue-50 min-h-screen flex items-center justify-center">
+    <div id="datetime" class="absolute top-4 right-4 text-gray-700 text-sm font-medium bg-white px-4 py-2 rounded-lg shadow-md">
+        <!-- JavaScript päivittää tämän -->
+      </div>
+    
+  <div class="max-w-lg w-full bg-white shadow-lg rounded-lg p-6">
+    <h1 class="text-2xl font-bold text-gray-700 text-center mb-6">Päivän tehtävät:</h1>
+    
+    <div class="flex mb-4">
+      <input 
+        id="taskInput" 
+        type="text" 
+        placeholder="Lisää uusi tehtävä" 
+        class="flex-1 border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:ring-2 focus:ring-blue-400 focus:outline-none"
+      />
+      <button 
+        id="addTaskButton" 
+        class="ml-3 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition">
+        Lisää
+      </button>
+    </div>
+    
+    <ul id="taskList" class="space-y-3">
+      <!-- Tasks will be dynamically added here -->
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
